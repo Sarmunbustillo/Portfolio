@@ -6,18 +6,19 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import Drawertoggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 
 const Toolbar = (props) => {
-    const StylesItems = [styles.navItem, styles.navLink];
     return (
-        <header >            
-        {/* <header className={styles.toolbar}>             */}
-           {/* <Drawertoggle clicked={props.DraweToggleClicked}/>
+        <header >
+            {/* <header className={styles.toolbar}>             */}
+            {/* <Drawertoggle clicked={props.DraweToggleClicked}/>
             <Link to="/"><div className={styles.home}>Home</div></Link>          
            <nav className={styles.desktopOnly}>
                <NavigationItems/>
            </nav> */}
             <div className={styles.navigation}>
                 <input type="checkbox" className={styles.navCheckbox} id="navi-toggle" />
-                <label for="navi-toggle" className={styles.navButton}>MENU</label>
+                <label for="navi-toggle" className={styles.navButton}>
+                    <span className={styles.navIcon}>&nbsp;</span>
+                </label>
                 <div className={styles.navBackground}>&nbsp;</div>
                 <nav className={styles.navNav}>
                     <ul className={styles.navList}>
