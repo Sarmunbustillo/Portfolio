@@ -1,0 +1,144 @@
+.toolbar {   
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 0);
+}
+.home {    
+    color: white;
+    height: 100%;
+    font-size: 20px;    
+    padding: 10px 20px; 
+    display: inline-block;   
+}
+
+
+.home:hover {
+    transform: translateY(2px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px; 
+              
+}
+
+.home:active, .active  {
+      background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation {
+    
+}
+
+.navCheckbox {
+    display: none;
+}
+
+.navButton {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    border-radius: 50%;
+    z-index: 1100;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    
+}
+
+.navBackground {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;   
+    position: absolute; 
+    top: 65px;
+    right: 65px;
+    background-image: radial-gradient(rgb(228, 142, 142), rgb(163, 0, 0));
+    z-index: 1000;
+    transition: transform .8s;
+
+    /* transform: scale(70); */
+    
+}
+
+
+.navNav {
+    height: 100vh;    
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1050;
+    opacity: 0;
+    width: 0;
+    transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navList{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navItem {
+    margin: 30px;
+    
+}
+
+.navLink {
+  
+}
+
+.navLink:link, .navLink:visited {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 220%;    
+    transition: all .4s ;  
+
+}
+
+.navLink:hover, .navLink:active {
+    background-position: 100%;
+    color: rgb(228, 142, 142);
+    transform: translateX(10px);
+    
+}
+
+.navCheckbox:checked ~ .navBackground {  
+    transform: scale(70);
+}
+.navCheckbox:checked ~ .navNav {
+    opacity: 1;
+    width: 100%;
+}
+
+/* desktop */
+@media (max-width: 499px) {
+    .desktopOnly {
+        display: none;        
+    }
+}
+
+/* large screens */
+@media only screen  and (min-width : 1824px) {   
+    
+    .home {         
+        font-size: 20px;    
+        
+    }
+
+ }
