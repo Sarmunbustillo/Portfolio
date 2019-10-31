@@ -1,41 +1,3 @@
-.toolbar {   
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;  
-    top: 0;
-    left: 0;   
-    width: 100%;
-    height: 40px;
-    padding: 0 20px;
-    z-index: 90;
-    background-color: rgba(255, 255, 255, 0);
-}
-.home {    
-    color: white;
-    height: 100%;
-    font-size: 20px;    
-    padding: 10px 20px; 
-    display: inline-block;   
-}
-
-
-.home:hover {
-    transform: translateY(2px);
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px; 
-              
-}
-
-.home:active, .active  {
-      background-color: rgba(255, 255, 255, 0.1);
-}
-
-
-/* ////////////////////////////////////////////// */
-
-.navigation {
-    
-}
 
 .navCheckbox {
     display: none;
@@ -46,8 +8,8 @@
     height: 70px;
     width: 70px;
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 19px;
+    right: 30px;
     border-radius: 50%;
     z-index: 1100;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
@@ -60,16 +22,12 @@
     width: 60px;
     border-radius: 50%;   
     position: fixed; 
-    top: 65px;
-    right: 65px;
-    background-image: radial-gradient(rgb(228, 142, 142), rgb(163, 0, 0));
+    top: 24px;
+    right: 35px;
+    background-image: radial-gradient(#d2d2d2,#ffff);
     z-index: 1000;
-    transition: transform .8s;
-
-    /* transform: scale(70); */
-    
-}
-
+    transition: transform .8s;       
+} 
 
 .navNav {    
     height: 100vh;     
@@ -79,49 +37,8 @@
     z-index: 1050;
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all .6s cubic-bezier(0.86, 0, 0.07, 1);
 }
-
-.navList{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-    width: 100%;
-}
-
-.navItem {
-    margin: 30px;
-    
-}
-
-.navLink {
-  
-}
-
-.navLink:link, .navLink:visited {
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 300;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 220%;    
-    transition: all .4s ;  
-
-}
-
-.navLink:hover, .navLink:active {
-    background-position: 100%;
-    color: rgb(228, 142, 142);
-    transform: translateX(10px);
-    
-}
-
 /*FUNCTIONALITY */
 .navCheckbox:checked ~ .navBackground {  
     transform: scale(70);
@@ -186,21 +103,23 @@
     transform: rotate( -135deg);
 }
 
+ @media (max-width: 500px) {  
+    .navButton {
+        height: 55px;
+        width: 55px;   
+    }
 
+    .navBackground {
+        height: 45px;
+        width: 45px;    
+    }   
+    
+    .navIcon {
+    position: relative;
+    margin-top: 27px;
+    }
 
-/* desktop */
-@media (max-width: 499px) {
-    .desktopOnly {
-        display: none;        
+    .navIcon, .navIcon::before, .navIcon::after {    
+        width: 27px;         
     }
 }
-
-/* large screens */
-@media only screen  and (min-width : 1824px) {   
-    
-    .home {         
-        font-size: 20px;    
-        
-    }
-
- }

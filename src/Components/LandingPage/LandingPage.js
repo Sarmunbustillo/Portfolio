@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Cell} from 'react-mdl';
-//import LandingBody from './LandingBody/LandingBody';
-// import '../../App.css';
+
 import styles from './LandingPage.module.css';
 
 class Landing extends Component {
