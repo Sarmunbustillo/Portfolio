@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import styles from './LandingPage.module.css';
-
 class Landing extends Component {
     render() {
         return (
@@ -26,11 +25,12 @@ class Landing extends Component {
                                 </a>                                
                             </div>
                         </div>                    
-                </div>                 
+                </div>   
                 
             </div>
         );
     }
 };
+
 
 export default Landing;
