@@ -7,7 +7,7 @@ import Toolbar from './Components/Navigation/Toolbar/Toolbar';
 function App() {
   return (    
     <div className="app">
-      <Toolbar/>
+      <Layout/>
       
       <Main/>            
     </div>

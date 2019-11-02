@@ -1,6 +1,6 @@
 
 .landingGrid {
-   text-align: center;
+  text-align: center;
   position: fixed;
   display: grid;
   grid-template-rows:   1fr 2fr 1fr;
@@ -12,8 +12,7 @@
   height: 100vh;
 
 }
-
-.picImg {    
+.picContainer{
     height: 100%;
     width: 100%;
     background-image: url(../../pics/window.JPG);
@@ -25,7 +24,6 @@
     transform: translateZ(0) scale(1.0, 1.0);
     animation: zoomIn 80s linear 10ms infinite;
     transition: all 0.2s ease-in-out;
-    
 }
 
 .picContainer::after {

@@ -4,10 +4,10 @@
 }
 
 .navButton {
-    background-color: white;
+    background-color: whitesmoke;    
     height: 70px;
     width: 70px;
-    position: absolute;
+    position: fixed;
     top: 19px;
     right: 30px;
     border-radius: 50%;
@@ -16,6 +16,9 @@
     text-align: center;
     cursor: pointer;
 }
+
+
+
 
 .navBackground {
     height: 60px;
@@ -114,8 +117,7 @@
         width: 45px;    
     }   
     
-    .navIcon {
-    position: relative;
+    .navIcon {   
     margin-top: 27px;
     }
 
