@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styles from './LandingPage.module.css';
 class Landing extends Component {
     render() {
-        return (           
+        return (                   
             <div className={styles.landingGrid}>              
                     <div className={styles.picContainer}></div>
                     <span className={styles.author}>Sarmun Bustillo</span>
@@ -17,7 +17,7 @@ class Landing extends Component {
                             </a>                                
                         </div>
                     </div>                   
-            </div>           
+            </div>                      
         );
     }
 };

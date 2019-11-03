@@ -7,23 +7,16 @@ import {Link} from 'react-router-dom';
 const Cards = (props) => {
     return (
         <Aux>
-            <Card shadow={5} className={styles.Card}>
-              
-                     <CardTitle className={props.cardtitle}>{props.children}</CardTitle>
-              
-                
+            <Card shadow={5} className={styles.Card}>              
+                     <CardTitle className={props.cardtitle}>{props.children}</CardTitle>                
                     <CardText className={styles.CardText}>
                         {props.description}
-                    </CardText>
-               
+                    </CardText>               
                 <CardActions border className={styles.cardActions}>
                     <Link to={props.link}> <Button colored><span style={{color: 'black', fontWeight: 'bold'}}>Github</span></Button></Link>
-                    <Button colored><span style={{ color: 'black', fontWeight: 'bold'}}>demo</span></Button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                 
-                </CardActions>
-
-                <CardMenu className={styles.cardMenu}></CardMenu>        
-                
+                    <Button colored><span style={{ color: 'black', fontWeight: 'bold'}}>demo</span></Button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                 </CardActions>
+                <CardMenu className={styles.cardMenu}></CardMenu>                 
             </Card>
         </Aux>
         

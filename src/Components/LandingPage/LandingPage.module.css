@@ -1,7 +1,7 @@
 
 .landingGrid {
   text-align: center;
-  position: fixed;
+  position: relative;
   display: grid;
   grid-template-rows:   1fr 2fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -10,6 +10,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 
 }
 .picContainer{
@@ -17,12 +18,14 @@
     width: 100%;
     background-image: url(../../pics/window.JPG);
      background-size: cover;
+     background-attachment: fixed;
     top: 0;
     left: 0;
     position: absolute;
     z-index: -1;
     transform: translateZ(0) scale(1.0, 1.0);
-    animation: zoomIn 80s linear 10ms infinite;
+    animation: zoomIn 50s linear 10ms infinite;
+    animation-direction: alternate;
     transition: all 0.2s ease-in-out;
 }
 
