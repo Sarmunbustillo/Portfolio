@@ -3,22 +3,30 @@ import styles from './Projects.module.css';
 import Cards from './Cards/Cards';
 
 
- const Projects = () => {           
+
+ const Projects = () => { 
+    
+    const joinClasses = (class1, class2) => {      
+    return [class1, class2];
+    }
+    
        return (  
            <div className={styles.wrapperProject}>
             <div className={styles.mainWrapper}>                   
                 <div className={styles.wrapper}>
                     {/* // project 1 */}
                     <Cards
-                        cardtitle={styles.javaScript}
-                        link={"urlgithub"}
+                        foto={styles.Cookit}
+                        cardtitle={joinClasses(styles.javaScript, styles.cookIt)}
+                        linkDemo={"https://sarmunbustillo.github.io/CookIt"}
+                        linkGit={"https://github.com/Sarmunbustillo/CookIt"}
                         description={<p>Recipe finder......
                                 <br></br>
                             <br></br>
                         </p>}
                     >CookIT!
                     </Cards>
-                    {/* // project 2 */}
+                       {/* // project 2 */} 
                     <Cards
                         cardtitle={styles.javaScript}
                         description={<p>Build, Customize and order a Burger Online!</p>}
@@ -26,7 +34,7 @@ import Cards from './Cards/Cards';
                         </Cards>
                     {/* // project 3 */}
                     <Cards
-                        cardtitle={styles.javaScript}
+                        cardtitle={joinClasses(styles.javaScript, styles.budgetCalculator)}
                         description={<p>Calculate your budget and dynamically see the percentages </p>}
                     >Budget Calculator
                         </Cards>
