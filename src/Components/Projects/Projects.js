@@ -6,36 +6,28 @@ import Cards from './Cards/Cards';
 
  const Projects = () => { 
     
-    const joinClasses = (class1, class2) => {      
-    return [class1, class2];
-    }
-    
-       return (  
-           <div className={styles.wrapperProject}>
+    return (  
+        <div className={styles.wrapperProject}>
             <div className={styles.mainWrapper}>                   
                 <div className={styles.wrapper}>
                     {/* // project 1 */}
                     <Cards
-                        foto={styles.Cookit}
-                        cardtitle={joinClasses(styles.javaScript, styles.cookIt)}
+                        background={styles.cookIt}                        
                         linkDemo={"https://sarmunbustillo.github.io/CookIt"}
                         linkGit={"https://github.com/Sarmunbustillo/CookIt"}
-                        description={<p>Recipe finder......
-                                <br></br>
-                            <br></br>
-                        </p>}
+                        description={'Recipe finder......'}
                     >CookIT!
                     </Cards>
-                       {/* // project 2 */} 
+                        {/* // project 2 */} 
                     <Cards
                         cardtitle={styles.javaScript}
-                        description={<p>Build, Customize and order a Burger Online!</p>}
+                        description={'Build, Customize and order a Burger Online!'}
                     >Dylan's Burger
                         </Cards>
                     {/* // project 3 */}
                     <Cards
-                        cardtitle={joinClasses(styles.javaScript, styles.budgetCalculator)}
-                        description={<p>Calculate your budget and dynamically see the percentages </p>}
+                        background={styles.budgetCalculator}                        
+                        description={'Calculate your budget and dynamically see the percentages'}
                     >Budget Calculator
                         </Cards>
                 </div> 
@@ -49,7 +41,7 @@ import Cards from './Cards/Cards';
                 </div>
             
             </div>
-        </div>  
+        </div>      
     );
 }
 

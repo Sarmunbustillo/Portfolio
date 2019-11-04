@@ -4,20 +4,19 @@ import Aux from '../../../hoc/Auxilary/Auxilary';
 import styles from './Cards.module.css';
 import {Link} from 'react-router-dom';
 
-const Cards = (props) => {    
+const Cards = (props) => {  
+    console.log(props.background);  
     return (
         <Aux>
-            <Card shadow={5} className={styles.Card}>              
-                     <CardTitle className={props.cardtitle}>{props.children}</CardTitle>                
-                    <CardText className={styles.CardText}>
-                        {props.description}
-                    </CardText>               
-                <CardActions border className={styles.cardActions}>
-                    <a href={props.linkGit} target="_blank"> <Button colored><span style={{color: 'black', fontWeight: 'bold'}}>Github</span></Button></a>
-                    <a href={props.linkDemo} target="_blank"> <Button colored><span style={{ color: 'black', fontWeight: 'bold'}}>demo</span></Button></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-                 </CardActions>
-                <CardMenu className={styles.cardMenu}></CardMenu>                 
-            </Card>
+            <div  className={styles.Card}> 
+                <div className={props.background}></div>         
+                <div className={styles.CardTitle}><span className={styles.title}>{props.children}</span></div>                
+                <div><span className={styles.CardText}>{props.description}</span></div>               
+                <div className={styles.linkContainer}>
+                    <a href={props.linkGit} target="_blank"><span className={styles.cardLinks}>Github</span></a>
+                    <a href={props.linkDemo} target="_blank"> <span className={styles.cardLinks}>demo</span></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                </div>                                 
+            </div>
         </Aux>
         
     )

@@ -1,40 +1,81 @@
-
 .Card {
-    width: 450px;
-    margin: auto;
-    margin-top: 10px;    
-    border-radius: 15px !important;
-    height: 350px;
+    width: 350px;
+    margin: auto;    
+    border-radius: 5%;
+    height: 200px;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 1px black ;    
+    text-align: center;
+    transition: all .3s ease-out;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+   
 }
 
-.CardTitle h2 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+.Card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 40px 1px black;    
+}
+.Card span{
+  opacity: 0
 }
 
-.CardMenu {
-    color:#fff    
+.Card:hover span { 
+    opacity: 1;
 }
-.cardActions {
-    /* text-align: center; */
-    
+.Card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: .8;
+    z-index: -1;   
+    height: 100%;
+    width: 100%;
 }
-.cardActions a{    
-    color: black;
+
+.title {
+    color: white;    
+    margin: 15px ;    
+    transition: all .5s ease-in;
+   
 }
+
+.linkContainer a {
+    text-decoration: none;
+}
+
+.CardText {
+   color: white;
+   margin-top: 5px;
+   transition: all .5s ease-in;
+}
+
+.cardLinks{
+     transition: all .5s ease-in;
+     color: white;
+     
+}
+
+
 
 /* halfscreen / ipad */
 @media only screen and (min-width: 500px) and (max-width: 707px) {
     .Card {
-        width: 300px;
-        height: 300px;
+        width: 210px;
+        height: 180px;
         margin-top: 15px;
+        
     }
 }
  /* mobile */
 @media(max-width: 499px) {
     .Card {
-        width: 200px;
+        width: 100px;
         height: 250px;
         margin-top: 15px;
         }
@@ -42,21 +83,21 @@
 
 @media (min-width: 1524px) {
     .Card {
-        width: 650px;        
+        width: 450px;        
         margin-top: 20px;    
-        border-radius: 15px !important;
+        border-radius: 15px ;
         height: 350px;
     }
 
-    .CardTitle h2 {
-        font-size: 70px;
+    .CardTitle  {
+        font-size: 30px;
         color: rgb(255, 255, 255);
     }
 
     .CardMenu {
         color:#fff    
     }
-    .cardActions {
+    .cardLinks {
         /* text-align: center; */
         
     }

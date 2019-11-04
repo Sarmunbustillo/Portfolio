@@ -15,7 +15,7 @@ function App() {
       <section >
         <LandingPage/>
       </section>
-      <section style={{height: '100vh', position: 'relative'}}>
+      <section >
         <Projects />
       </section>
       <section>

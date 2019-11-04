@@ -24,15 +24,16 @@
     position: absolute;
     z-index: -1;
     transform: translateZ(0) scale(1.0, 1.0);
-    animation: zoomIn 50s linear 10ms infinite;
+    animation: zoomIn 80s linear 10ms infinite;
     animation-direction: alternate;
     transition: all 0.2s ease-in-out;
+    backface-visibility: hidden;
 }
 
 .picContainer::after {
     content: "";
     background-color: black;    
-    opacity: 0.5;
+    opacity: 0.65;
     top: 0;
     left: 0;
     bottom: 0;
