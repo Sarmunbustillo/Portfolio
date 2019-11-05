@@ -1,8 +1,8 @@
 .Card {
-    width: 350px;
+    width: 25vw;
+    height: 35vh;
     margin: auto;    
-    border-radius: 5%;
-    height: 200px;
+    border-radius: 5%;   
     border: 2px solid greenyellow;
     cursor: pointer;
     box-shadow: 1px 1px 20px 1px black ;    
@@ -12,6 +12,8 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+    margin-top: 20px;
+    
    
 }
 
@@ -36,6 +38,7 @@
     z-index: -1;   
     height: 100%;
     width: 100%;
+    border-radius: 5%;
 }
 
 .title {
@@ -66,42 +69,25 @@
 /* halfscreen / ipad */
 @media only screen and (min-width: 500px) and (max-width: 707px) {
     .Card {
-        width: 210px;
-        height: 180px;
+        height: 25vh;
         margin-top: 15px;
         
     }
 }
  /* mobile */
 @media(max-width: 499px) {
-    .Card {
-        width: 100px;
-        height: 250px;
-        margin-top: 15px;
-        }
+    .Card {      
+       width: 80vh;
+       
     }
+}
 
 @media (min-width: 1524px) {
     .Card {
-        width: 450px;        
-        margin-top: 20px;    
-        border-radius: 15px ;
-        height: 350px;
-    }
-
-    .CardTitle  {
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-    }
-
-    .CardMenu {
-        color:#fff    
-    }
-    .cardLinks {
-        /* text-align: center; */
+             
+       
         
     }
-    .cardActions a{    
-        color: black;
-    }
+
+    
 }

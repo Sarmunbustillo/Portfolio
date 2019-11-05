@@ -30,8 +30,7 @@ import Cards from './Cards/Cards';
                         description={'Calculate your budget and dynamically see the percentages'}
                     >Budget Calculator
                         </Cards>
-                </div> 
-                <div className={styles.wrapper}>
+              
                     {/* // project 4 */}
                     <Cards cardtitle={styles.react}>React Project #1</Cards>
                     {/* // project 5 */}
