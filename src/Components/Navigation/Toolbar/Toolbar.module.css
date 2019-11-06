@@ -17,9 +17,6 @@
     cursor: pointer;
 }
 
-
-
-
 .navBackground {
     height: 60px;
     width: 60px;
@@ -71,7 +68,7 @@
     content: "";
     position: absolute;
     left: 0;   
-    transition: all .2s;
+    transition: all 1s;
 
 }
 
@@ -98,12 +95,13 @@
 
 .navCheckbox:checked + .navButton > .navIcon::before {
     top: 0;
-   transform: rotate( 135deg);
+   transform: rotate( 495deg) ;
 }
 
 .navCheckbox:checked + .navButton > .navIcon::after {
     top: 0;
-    transform: rotate( -135deg);
+    transform: rotate( -495deg);
+    
 }
 
  @media (max-width: 500px) {  

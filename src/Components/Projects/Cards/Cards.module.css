@@ -11,21 +11,24 @@
     flex-flow: column;    
     margin-top: 20px; 
     transition: all .3s ease-out;
-    
+    overflow: hidden;
    
 }
 
 .Card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.12); 
     box-shadow: 1px 1px 40px 1px black;      
 }
 
 .Card span{
-  opacity: 0
+  opacity: 0;
+  
 }
 
 .Card:hover span { 
-    opacity: 1;
+    opacity: 1; 
+    transform: translateY(-10%);
+    
 }
 
 .Card:hover::after {
@@ -40,12 +43,17 @@
     width: 100%;
     border-radius: 5%;
 }
+
 .CardTitle {
     padding-top: 4vh;
     padding-bottom: 8vh;
-    transform: skewY(-5deg);
-    text-shadow: 1px 1px 10px black;
-    
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 10px black;      
+    transition: all .7s ease; 
+}
+
+.Card:hover > .CardTitle{
+      transform: translateY(-0%) skewY(-5deg) ;   
 }
 
 .title {
@@ -53,18 +61,26 @@
     margin: 0px ;    
     transition: all .5s ease-in;
     font-size: 2.5vw;
-    line-break: 1.1;
-  
+    line-break: 1.1;  
 }
+
+.cardDescription {
+    transform: translateY(800%);
+    transition: all .7s ease; 
+}
+
+.Card:hover > .cardDescription{
+      transform: translateY(0%);   
+}
+
 
 .description{
     font-size: 15px;
     line-height: 1.3;
     color: white;
     text-shadow: 1px 1px 10px black;
+       
 }
-
-
 
 
 

@@ -14,7 +14,7 @@ const Cards = (props) => {
             <div className={styles.Card} onClick={() => openNewTab(props.linkDemo)}> 
                 <div className={props.background}></div>         
                 <div className={styles.CardTitle}><span className={styles.title}><strong>{props.children}</strong></span></div>                
-                <div className={styles.cardText}><span className={styles.description}>{props.description}</span></div>                                           
+                <div className={styles.cardDescription}><span className={styles.description}>{props.description}</span></div>                                           
             </div>           
         </Aux>
         

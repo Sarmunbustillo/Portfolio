@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Layout from './Components/Layout/Layout';
-import Main from './Components/Main';
+
 import Toolbar from './Components/Navigation/Toolbar/Toolbar';
 import LandingPage from './Components/LandingPage/LandingPage';
 import Projects from './Components/Projects/Projects';
