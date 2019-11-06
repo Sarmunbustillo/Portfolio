@@ -1,31 +1,34 @@
-import React, {useEffect  } from 'react';
+import React, {useEffect, useState } from 'react';
 
 import styles from './LandingPage.module.css';
 
 
 const Landing = () =>  {   
-    let   
-    const onScrollHandler = () => {
-        if( window.scrollY > 20) {
-            console.log('> 20')
-
-           const container = document.querySelector('stylespicContainer');  
-
-            container.classList.toggle('blackish');
-            
-        }
-        else {
-            console.log ('mpeee')
-        }
-    }
-    useEffect(() => {
-        window.addEventListener('scroll', onScrollHandler)
-       
-    },)
+    // const [color, setColor] = useState(styles.picContainer);
+    
+    // const onScrollHandler = () => {
+    //     if( window.scrollY > 700) {
+    //         console.log('> 20')
+    //         setColor(styles.blackish)
+    //         console.log('aaaaaaaaaaaaaaa', color);    
+    //     }
+    //     else {
+    //         console.log ('mpeee')
+    //         setColor(styles.picContainer)
+    //         console.log(color);
+    //     }
+    // }
+    // useEffect(() => {
+    //     window.addEventListener('scroll', onScrollHandler);
+        
+    //     return () => {
+    //         window.removeEventListener('scroll', onScrollHandler);
+    //     }
+    // },)
 
     return (                   
         <div className={styles.landingGrid}>           
-                <div className={styles.picContainer}></div>
+            <div className={styles.picContainer}></div>
                 <span className={styles.author} id="sss">Sarmun Bustillo</span>
                 <div className={styles.bannerText}>
                     <h1>Junior Web Developer</h1>

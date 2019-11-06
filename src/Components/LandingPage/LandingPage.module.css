@@ -1,7 +1,14 @@
 .blackish {
-    background-image: red !important;
-    z-index: 1000000;
-    color: red !important;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: background 1s ease;
 }
 
 

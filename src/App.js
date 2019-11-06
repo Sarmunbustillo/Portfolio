@@ -5,7 +5,7 @@ import Main from './Components/Main';
 import Toolbar from './Components/Navigation/Toolbar/Toolbar';
 import LandingPage from './Components/LandingPage/LandingPage';
 import Projects from './Components/Projects/Projects';
-import About from './Components/Aboutme';
+import Aboutme from './Components/Aboutme/Aboutme';
 import Contact from './Components/Contact';
 
 function App() {
@@ -17,6 +17,9 @@ function App() {
       </section>
       <section >
         <Projects />
+      </section>
+      <section>
+        <Aboutme />
       </section>
       <section>
         <Contact />
