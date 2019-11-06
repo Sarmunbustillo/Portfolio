@@ -23,7 +23,7 @@
 .itemLink:hover, .itemLink:active {
     background-position: 100%;
     color:  rgb(228, 142, 142); 
-    color:  #57b3ee; 
+    color:  #e2ab3b; 
     transform: translateX(10px);
 }
 

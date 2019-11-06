@@ -4,19 +4,18 @@ import Aux from '../../../hoc/Auxilary/Auxilary';
 import styles from './Cards.module.css';
 import {Link} from 'react-router-dom';
 
-const Cards = (props) => {  
-    console.log(props.background);  
+const Cards = (props) => {     
+    const openNewTab = (url) => {
+        let win = window.open(url, '_blank');          
+    }
+    
     return (
-        <Aux>
-            <div  className={styles.Card}> 
+        <Aux>           
+            <div className={styles.Card} onClick={() => openNewTab(props.linkDemo)}> 
                 <div className={props.background}></div>         
-                <div className={styles.CardTitle}><span className={styles.title}>{props.children}</span></div>                
-                <div><span className={styles.CardText}>{props.description}</span></div>               
-                <div className={styles.linkContainer}>
-                    <a href={props.linkGit} target="_blank"><span className={styles.cardLinks}>Github</span></a>
-                    <a href={props.linkDemo} target="_blank"> <span className={styles.cardLinks}>demo</span></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-                </div>                                 
-            </div>
+                <div className={styles.CardTitle}><span className={styles.title}><strong>{props.children}</strong></span></div>                
+                <div className={styles.cardText}><span className={styles.description}>{props.description}</span></div>                                           
+            </div>           
         </Aux>
         
     )

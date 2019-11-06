@@ -1,3 +1,9 @@
+.blackish {
+    background-image: red !important;
+    z-index: 1000000;
+    color: red !important;
+}
+
 
 .landingGrid {
   text-align: center;

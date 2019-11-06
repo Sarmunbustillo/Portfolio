@@ -1,7 +1,6 @@
 .wrapperProject{  
     height: 100vh;
-   position: relative;
-   border: 2px solid blueviolet;
+   position: relative;  
   
 }
 
@@ -33,14 +32,21 @@
     z-index: -9 ;
 } 
 
+.title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 5.3vw;
+    color: white;
+    text-shadow: 10px 5px 12px black;   
+    transform: translateX(-50%) translateY(-5%) skewY(-10deg);
+    }
+
 .mainWrapper {
     width: 100%;
     height: 100%;
-    /* position: unset;    */
-    border: 1px solid blanchedalmond;
     display: flex;
-    align-items: center;
-
+    align-items: center;    
       
 }
 
@@ -77,17 +83,18 @@
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0;      
-    border: 2px solid red;    
+    margin: 0 0;        
     height: 100%;
     align-content: center;
+    padding-top: 1vw;
     
 }
 
 
 .cookIt {
     background-image: url(./projectsPics/cookIt.png);
-    background-size: cover;    
+    background-size: cover;
+    background-position-x: center;
     height: 100%;
     border-radius: 5%;
    z-index: -1;
@@ -126,22 +133,23 @@
      .wrapper:not(:first-child){
         margin: 0;
         padding: 10px 0px 20px 0px;
-    }
+    }    
+}
 
-    .wrapper:first-child {
-        
-    }
-
-    .mainWrapper{        
-        border: 2px solid green; 
-       
+@media only screen and (min-width: 500px) and (max-width: 707px) {
+    .wrapperProject{
+        height: 90vh;
     }
 }
 
 /* mobile */
-@media(max-width: 490px) {
+@media(max-width: 499px) {  
+    .wrapperProject{
+        height: 70vh;
+    }
     .mainWrapper{
-           
+        overflow: scroll;     
+        height: 100%;
         
     }
 
@@ -158,9 +166,18 @@
     margin-bottom: -10px;
     }
 
-    .wrapper{
-         
-        height: 100%;
+    .wrapper{       
+       width: auto;      
+       flex-flow: row;
+       align-items: center;
+       height: auto;
+       overflow: visible;
+       padding: 20px;
     }
 
+    .title{
+        font-size: 10vw;
+
+    }
+   
 }
