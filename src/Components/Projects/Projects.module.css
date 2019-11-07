@@ -39,8 +39,7 @@
     font-size: 5.3vw;
     color: white;
     text-shadow: 10px 5px 12px black;   
-    transform: translateX(-50%) translateY(-8%) skewY(-10deg);
-   
+    transform: translateX(-50%) translateY(-8%) skewY(-10deg);   
   
     }
 
@@ -62,6 +61,7 @@
     bottom: 0;
     right: 0;
     position: absolute; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100% );
     
    
 }

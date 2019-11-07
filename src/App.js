@@ -5,7 +5,7 @@ import Toolbar from './Components/Navigation/Toolbar/Toolbar';
 import LandingPage from './Components/LandingPage/LandingPage';
 import Projects from './Components/Projects/Projects';
 import Aboutme from './Components/Aboutme/Aboutme';
-import Contact from './Components/Contact';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (    
