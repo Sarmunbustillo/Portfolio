@@ -7,6 +7,7 @@
  .wrapperProject::after{
     content: "";
     background-color: #c28b19;
+    background-color: #eca208;
     clip-path: polygon(1% 1%, 10% 80%, 99% 93%);
     opacity: .9;
     top: 0;
@@ -21,6 +22,7 @@
  .wrapperProject::before{
     content: "";
     background-color: #e2ab3b;
+    background-color: #eca208;
     clip-path: polygon(1% 12%, 19% 99%, 99% 1%);
     opacity: .9;
     top: 0;

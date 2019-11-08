@@ -31,6 +31,7 @@ const Landing = () =>  {
             <div className={styles.picContainer}></div>
                 <span className={styles.author} id="sss">Sarmun Bustillo</span>
                 <div className={styles.bannerText}>
+                    
                     <h1>Junior Web Developer</h1>
                     <hr/>
                     <p>HTML/CSS | JavaScript | React</p>                           

@@ -1,6 +1,6 @@
 .Card {
     width: 25vw;
-    height: 35vh;
+    height: 30vh;
     margin: auto;    
     border-radius: 5%;       
     cursor: pointer;
@@ -9,7 +9,7 @@
     position: relative;
     display: flex;
     flex-flow: column;    
-    margin-top: 20px; 
+    margin-top: 40px; 
     transition: all .3s ease-out;
     overflow: hidden;
    
@@ -47,7 +47,7 @@
 .CardTitle {
     padding-top: 4vh;
     padding-bottom: 8vh;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     text-shadow: 1px 1px 10px black;      
     transition: all .7s ease; 
 }
@@ -123,9 +123,17 @@
     }
 
     .title{
-        font-size: 8vw;
-        
+        font-size: 8vw;        
     }
+
+    .CardTitle {
+    transform: translateY(0%) skewY(-5deg);
+    }
+
+    .cardDescription {
+    transform: translateY(0%);
+    }
+
 }
 
 @media (min-width: 1524px) {    
