@@ -15,7 +15,7 @@ const Contact = () => {
             width: 100%;
             top: -30%;
             background-color: #d7d7d7; 
-            transform: skewY(-6deg);           
+            transform: skewY(-6deg);      
             
         }
        @media(max-width: 499px) { 

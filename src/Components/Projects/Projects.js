@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Projects.module.css';
-import Cards from './Cards/Cards';
-import { Link } from 'react-router-dom';
+import Cards from './Cards/Cards';;
 
 
 

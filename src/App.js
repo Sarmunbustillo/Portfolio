@@ -11,16 +11,16 @@ function App() {
   return (    
     <div className="app">
       <Toolbar />
-      <section >
+      <section  >
         <LandingPage/>
       </section>
-      <section >
+      <section id="projects" >
         <Projects />
       </section>
-      <section>
+      <section id="aboutme" style={{paddingTop:'100px', marginTop: '-100px'}} >
         <Aboutme />
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
            

@@ -16,7 +16,7 @@ const About = () => {
 
     const Skewed = styled.div`
         position: relative;
-        top: -8%; 
+        top: -9%; 
         left: 0;
         height: 80%;
         width: 100%;
@@ -32,7 +32,7 @@ const About = () => {
             left: 50%;
             height: 100%;
             width: 95%;        
-            box-shadow: inset 0px 0px 46px black;
+            box-shadow: inset 0px 0px 46px  black;
             background-color: #d7d7d7;  
             z-index: -101;  
             transform: translateX(-50%);                

@@ -1,12 +1,10 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardActions, Button, CardMenu } from 'react-mdl';
 import Aux from '../../../hoc/Auxilary/Auxilary';
 import styles from './Cards.module.css';
-import {Link} from 'react-router-dom';
 
 const Cards = (props) => {     
     const openNewTab = (url) => {
-        let win = window.open(url, '_blank');          
+     window.open(url, '_blank');          
     }
     
     return (

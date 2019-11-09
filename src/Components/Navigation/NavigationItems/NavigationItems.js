@@ -5,10 +5,10 @@ import NavigationItem from './NavigationItem/NavigationItem';
 const NavigationItems = (props) => {
     return (
         <ul className={styles.navigationItems}>
-           <NavigationItem checked={props.checked} link="/">Home</NavigationItem>            
-           <NavigationItem checked={props.checked} link="/Aboutme">About</NavigationItem>
-           <NavigationItem checked={props.checked} link="/Projects">Projects</NavigationItem>
-           <NavigationItem checked={props.checked} link="/Contact">Contact</NavigationItem> 
+           <NavigationItem checked={props.checked} link="#">Home</NavigationItem>            
+           <NavigationItem checked={props.checked} link="#projects">Projects</NavigationItem>
+           <NavigationItem checked={props.checked} link="#aboutme">About</NavigationItem>
+           <NavigationItem checked={props.checked} link="#contact">Contact</NavigationItem> 
         </ul>
     )
 }
