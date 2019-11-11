@@ -36,12 +36,13 @@
 
 .title {
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
-    font-size: 5.3vw;
+    font-size: 5vw;
     color: white;
     text-shadow: 10px 5px 12px black;   
     transform: translateX(-50%) translateY(-8%) skewY(-10deg);   
+    text-transform: uppercase;
   
     }
 
