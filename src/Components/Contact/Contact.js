@@ -49,10 +49,14 @@ const Contact = () => {
         color: white;
         text-transform: uppercase;
         text-shadow: 2px 5px 10px black;
-        margin-top: 5vh;
+        margin-top: 5vh; 
+        transition: font-size .2s ease-in;
 
         @media(max-width: 499px) { 
-            font-size: 5vw;
+            font-size: 6vw;
+            margin-top: 1vh;
+            margin-bottom:  1vh;
+
          }
     `;
 
@@ -60,9 +64,21 @@ const Contact = () => {
         width: 90%;
         align-self: center;
         display: flex;   
-        margin-top: 3vh; 
-        justify-content: center;
-        align-items: center;       
+        margin-top: 3vh;
+        transition: all .5s ease-in;
+  
+        
+         @media(max-width: 499px) { 
+            flex-flow: column;
+            margin: 0;  
+            padding: 0;              
+         }
+
+        @media only screen and (min-width: 500px) and (max-width: 799px) {
+            flex-flow: column;
+            margin: 0;  
+            padding: 0;   
+        }
         
     `;
 
@@ -70,6 +86,24 @@ const Contact = () => {
         font-size: 1.5vw;
         color: white;       
         margin: 1vw;
+        flex: 1;
+        transition: font-size .2s ease-in;
+        
+        /* halfscreen / ipad */
+        @media only screen and (min-width: 800px) and (max-width: 1100px) {
+            font-size: 1.8vw;
+            padding: 0;
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 799px) {
+            font-size: 2.3vw;
+            margin: 1.5vh;
+        }
+
+       @media(max-width: 499px) { 
+            font-size: 3vw;
+            padding: 0;
+         }
        
         
         span {
@@ -82,14 +116,13 @@ const Contact = () => {
           <Skewed>
             <Title><strong>Contact</strong></Title>
             <ContactDetailsWrapper>
-            <ContactDetails><span><strong>email:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
-            <ContactDetails><span><strong>Phone:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
+                <ContactDetails><span><strong>email:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
+                <ContactDetails><span><strong>Phone:</strong></span> 0 152 23990484  </ContactDetails>
             </ContactDetailsWrapper>
-            <ContactDetailsWrapper>
-            <ContactDetails style={{flex: 'span 1'}}><span><strong>email:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
-            <ContactDetails><span><strong>Phone:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
-            </ContactDetailsWrapper>
-            
+            <ContactDetailsWrapper >
+                    <ContactDetails ><span><strong>Facebook:</strong></span> Sarmun.bustillo</ContactDetails>
+                <ContactDetails><span><strong>Twitter:</strong></span> @Sarmunbustillo  </ContactDetails>
+            </ContactDetailsWrapper>             
           </Skewed>
       </Wrapper>
     );
