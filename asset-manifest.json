@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/porfolio/static/css/main.63d1dd2c.chunk.css",
+    "main.js": "/porfolio/static/js/main.e700a2b2.chunk.js",
+    "main.js.map": "/porfolio/static/js/main.e700a2b2.chunk.js.map",
+    "runtime-main.js": "/porfolio/static/js/runtime-main.05258e58.js",
+    "runtime-main.js.map": "/porfolio/static/js/runtime-main.05258e58.js.map",
+    "static/css/2.04aae6c4.chunk.css": "/porfolio/static/css/2.04aae6c4.chunk.css",
+    "static/js/2.f2275e89.chunk.js": "/porfolio/static/js/2.f2275e89.chunk.js",
+    "static/js/2.f2275e89.chunk.js.map": "/porfolio/static/js/2.f2275e89.chunk.js.map",
+    "index.html": "/porfolio/index.html",
+    "precache-manifest.d16f8d17a61d3daf440d57fefb962a92.js": "/porfolio/precache-manifest.d16f8d17a61d3daf440d57fefb962a92.js",
+    "service-worker.js": "/porfolio/service-worker.js",
+    "static/css/2.04aae6c4.chunk.css.map": "/porfolio/static/css/2.04aae6c4.chunk.css.map",
+    "static/css/main.63d1dd2c.chunk.css.map": "/porfolio/static/css/main.63d1dd2c.chunk.css.map",
+    "static/media/Projects.module.css": "/porfolio/static/media/cookIt.c1d71d8e.png",
+    "static/media/LandingPage.module.css": "/porfolio/static/media/window.9604c5a6.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05258e58.js",
+    "static/css/2.04aae6c4.chunk.css",
+    "static/js/2.f2275e89.chunk.js",
+    "static/css/main.63d1dd2c.chunk.css",
+    "static/js/main.e700a2b2.chunk.js"
+  ]
+}
