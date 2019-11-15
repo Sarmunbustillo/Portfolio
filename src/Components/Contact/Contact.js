@@ -6,6 +6,7 @@ const Contact = () => {
     const Wrapper = styled.div`
         height: 40vh;
         background-color: #d7d7d7;
+        background-color: #6d7a69;
         position: relative;  
         
         ::before{
@@ -15,6 +16,7 @@ const Contact = () => {
             width: 100%;
             top: -30%;
             background-color: #d7d7d7; 
+            background-color: #6d7a69; 
             transform: skewY(-6deg);      
             
         }
@@ -27,7 +29,8 @@ const Contact = () => {
         position: relative;
         width: 80%;
         height: 110%;
-        background-color: #eca208;
+        background-color: #6d7a69;
+        background-color: #d7d7d7; 
         top: -23%;
         left: 50%;
         transform: translateX(-50%);
@@ -45,12 +48,14 @@ const Contact = () => {
 
     const Title = styled.h2`
         display: inline-block;
-        font-size: 3.5vw;
-        color: white;
-        text-transform: uppercase;
+        font-size: 3.5vw;                
+        font-family: 'Fugaz One', cursive;
+        color: #6d7a69;
         text-shadow: 2px 5px 10px black;
         margin-top: 5vh; 
+        transform: skewY(-6deg);
         transition: font-size .2s ease-in;
+        
 
         @media(max-width: 499px) { 
             font-size: 6vw;
@@ -63,7 +68,7 @@ const Contact = () => {
     const ContactDetailsWrapper = styled.div`
         width: 90%;
         align-self: center;
-        display: flex;   
+        display: flex;
         margin-top: 3vh;
         transition: all .5s ease-in;
   
@@ -84,10 +89,12 @@ const Contact = () => {
 
     const ContactDetails = styled.p`
         font-size: 1.5vw;
-        color: white;       
+        font-family: 'Fugaz One', cursive;
+        color: #6d7a69;       
         margin: 1vw;
         flex: 1;
         transition: font-size .2s ease-in;
+      
         
         /* halfscreen / ipad */
         @media only screen and (min-width: 800px) and (max-width: 1100px) {
@@ -103,25 +110,21 @@ const Contact = () => {
        @media(max-width: 499px) { 
             font-size: 3vw;
             padding: 0;
-         }
-       
+         }       
         
-        span {
-             text-transform: uppercase;             
-        }
     `;
 
     return (            
       <Wrapper>
           <Skewed>
             <Title><strong>Contact</strong></Title>
-            <ContactDetailsWrapper>
-                <ContactDetails><span><strong>email:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
-                <ContactDetails><span><strong>Phone:</strong></span> 0 152 23990484  </ContactDetails>
-            </ContactDetailsWrapper>
-            <ContactDetailsWrapper >
+                <ContactDetailsWrapper >
+                    <ContactDetails><span><strong>Email:</strong></span> sarmunbustillo@hotmail.com  </ContactDetails>
                     <ContactDetails ><span><strong>Facebook:</strong></span> Sarmun.bustillo</ContactDetails>
-                <ContactDetails><span><strong>Twitter:</strong></span> @Sarmunbustillo  </ContactDetails>
+            </ContactDetailsWrapper>
+                <ContactDetailsWrapper >
+                    <ContactDetails  ><span ><strong>Phone:</strong></span> 0 152 23990484  </ContactDetails>               
+                    <ContactDetails ><span><strong>Twitter:</strong></span> @Sarmunbustillo  </ContactDetails>
             </ContactDetailsWrapper>             
           </Skewed>
       </Wrapper>

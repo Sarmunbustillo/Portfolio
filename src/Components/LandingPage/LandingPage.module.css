@@ -50,6 +50,8 @@
     font-size: 2rem;
     text-decoration: none;
     color: #fff;
+    font-family: 'Rock Salt', cursive;
+    color: #6d7a69; 
     
 }
 
@@ -68,27 +70,28 @@
     
 }
 
-.bannerText h1 {
-    font-family: 'Courgette', cursive;
-    font-family: 'Racing Sans One', cursive;
-    font-family: 'Bungee Inline', cursive;
+.bannerText h1 {   
+    font-family: 'Fugaz One', cursive;
     font-size: 50px;
     font-weight: bold;
     color: white;
+    color: #cab17c; 
+    color: #d7d7d7; 
     text-align: center;
     animation: appearTitle 1.5s ease-in;
 
 }
 
 .bannerText hr {
-    border-top: 5px solid white;
+    border-top: 5px solid #6d7a69;
     width: 50%;
     margin: auto;
     animation: grow 2s ease-in;
 }
 
 .bannerText p {
-    color: white;
+    font-family: 'Fugaz One', cursive;
+    color: #d7d7d7; 
     font-size: 20px;
     padding: 1em;
     animation: appear 2.5s ease-in;
@@ -105,6 +108,7 @@
 
 .socialLinks i {
     color: white;
+    color: #d7d7d7; 
     font-size: 5em;
     padding: 8px;
 }
@@ -146,6 +150,7 @@
 /* animation title bounce */
 @keyframes grow{
     0% {
+        opacity: 0;
         width: 0%;        
     }    
 

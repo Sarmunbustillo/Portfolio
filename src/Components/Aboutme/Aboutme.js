@@ -33,6 +33,7 @@ const About = () => {
             height: 100%;
             width: 95%;        
             box-shadow: inset 0px 0px 46px  black;
+            background-color: #ffff;                
             background-color: #d7d7d7;  
             z-index: -101;  
             transform: translateX(-50%);                
