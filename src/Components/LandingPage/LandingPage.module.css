@@ -15,17 +15,27 @@
 .picContainer{
     height: 100%;
     width: 100%;
-    background-image: url(../../pics/window.JPG);
-     background-size: cover;
-     background-attachment: fixed;
+    background-image: url(../../pics/window.JPG);    
+    background-size: cover;
+    background-attachment: fixed; 
     top: 0;
     left: 0;
     position: absolute;
     z-index: -1;
     transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-animation: zoomIn 80s linear 10ms infinite;    
+    -moz-animationzoomIn: 80s linear 10ms infinite;
+    -ms-animation:zoomIn 80s linear 10ms infinite;
+    -o-animation:zoomIn 80s linear 10ms infinite;      
     animation: zoomIn 80s linear 10ms infinite;
+
+    -webkit-animation-direction:alternate;
+    -moz-animation-direction:alternate;
+    -ms-animation-direction:alternate;
+     -o-animation-direction:alternate;
     animation-direction: alternate;
     transition: all 0.2s ease-in-out;
+    -webkit-backface-visibility :hidden ;
     backface-visibility: hidden;
 }
 
@@ -171,14 +181,25 @@
 }
 /* zooms in slowly */
  @keyframes zoomIn {
-        0% {            
-            transform: scale(1);
-        }
+        0% {transform: scale(1);}
+        100% {transform: scale(1.5);}        
+    }
 
-        100% {
-            
-            transform: scale(1.5);
-        }        
+    @-webkit-keyframes zoomIn{
+         0% {transform: scale(1);}
+        100% {transform: scale(1.5);}
+    }
+    @-ms-keyframes zoomIn{
+        0% {transform: scale(1);}
+        100% {transform: scale(1.5);}
+    }
+    @-moz-keyframes zoomIn{
+        0% {transform: scale(1);}
+        100% {transform: scale(1.5);}
+    }
+    @-o-keyframes zoomIn{
+        0% {transform: scale(1);}
+        100% {transform: scale(1.5);}
     }
 
 /* half-screen / ipad */
@@ -206,6 +227,20 @@
 
 /* mobile */
 @media (max-width: 499px) {
+    .picContainer{
+        background-size: 200%;
+        -webkit-animation: zoomIn 30s linear 10ms infinite;    
+        -moz-animationzoomIn: 30s linear 10ms infinite;
+        -ms-animation:zoomIn 30s linear 10ms infinite;
+        -o-animation:zoomIn 30s linear 10ms infinite;      
+        animation: zoomIn 30s linear 10ms infinite;
+        -webkit-animation-direction:alternate;
+        -moz-animation-direction:alternate;
+        -ms-animation-direction:alternate;
+        -o-animation-direction:alternate;
+        animation-direction: alternate;
+
+    }
     .bannerText {
         width: 90%;        
     }   

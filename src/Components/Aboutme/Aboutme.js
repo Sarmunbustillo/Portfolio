@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import MeImage from '../../pics/turtle.JPG';
 
 const About = () => {    
     const Wrapper = styled.div`
@@ -7,7 +8,7 @@ const About = () => {
         position: relative;    
         z-index: -95;
         background-color:black ;      
-        
+
         @media(max-width: 499px) { 
             height: 70vh
          }
@@ -37,15 +38,42 @@ const About = () => {
             background-color: #d7d7d7;  
             z-index: -101;  
             transform: translateX(-50%);                
-        }
-
-            
+        }           
     `;
 
+    const ContentWrapper = styled.div`
+        position: relative;
+        top: 100%;
+        left: 50%;    
+        width: 90%;
+        height: 80%;
+        transform: skewY(6deg)  translateY(-100%) translateX(-50%);
+        border: 2px solid #6d7a69;
+        padding: 1vh;
+        display: flex;
+    `;
+    const Img = styled.div`
+        height: 100%;
+        width: 100%;
+        background-image: url(${MeImage});
+        background-size: cover;
+    `;
+    const TextWrapper = styled.div`
+        width: 100%;
+    `;
+    const Title = styled.h2`
+        position: absolute;
+        
+    `;
     
     return (        
         <Wrapper>  
-              <Skewed></Skewed> 
+            <Skewed>
+                <ContentWrapper>
+                    <Img />
+                    <TextWrapper></TextWrapper>
+                </ContentWrapper>  
+            </Skewed> 
         </Wrapper>
         
     );    
