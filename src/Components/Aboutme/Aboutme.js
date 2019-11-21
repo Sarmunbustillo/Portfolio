@@ -164,7 +164,7 @@ const About = () => {
                             I'm a Self-taught Junior Frontend Web-Dev happily based in Hamburg.
                             I am highly adaptable and driven by learning. 
                             I prefer to continue challenging myself, keep learning, and in doing interesting things that matter.
-                            If i am not tweeking around in  my editor, you can find me playing football.
+                            I like football and tropical fruits.
                         </Text>
                     </TextWrapper>
                 </ContentWrapper>  

@@ -41,7 +41,7 @@
     left: 50%;
     font-size: 5vw;
     color: #d7d7d7;
-    text-shadow: 4px 4px 13px black;
+    text-shadow: 4px 4px 12px black;
     transform: translateX(-50%) translateY(-8%) skewY(-10deg);       
     font-family: 'Fugaz One', cursive;
     }
@@ -111,8 +111,50 @@
     width: 100%;    
 }
 
+.burgersHooks {
+    background-image: url(../../pics/DB-hooks.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    border-radius: 5%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;    
+}
+
+.burgersRedux {
+    background-image: url(../../pics/DB-redux.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    border-radius: 5%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;    
+}
+
 .cookIt {
     background-image: url(../../pics/cookIt.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    border-radius: 5%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;    
+}
+
+.gridTeplate {
+    background-image: url(../../pics/CSS-grid.jpg);
     background-size: cover;
     background-position-x: center;
     height: 100%;

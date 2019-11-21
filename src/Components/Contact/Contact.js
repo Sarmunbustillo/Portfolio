@@ -51,7 +51,7 @@ const Contact = () => {
         font-size: 3.5vw;                
         font-family: 'Fugaz One', cursive;
         color: #6d7a69;
-        text-shadow: 4px 4px 13px black;
+        text-shadow: 4px 4px 12px black;
         margin-top: 5vh; 
         transform: skewY(-6deg);
         transition: font-size .2s ease-in;
