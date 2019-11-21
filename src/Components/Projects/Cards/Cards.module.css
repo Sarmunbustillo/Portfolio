@@ -81,6 +81,7 @@
 .cardDescription {
     transform: translateY(800%);
     transition: all .7s ease; 
+    padding: 0px 5%;
 }
 
 .Card:hover > .cardDescription{

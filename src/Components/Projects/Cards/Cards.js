@@ -13,6 +13,7 @@ const Cards = (props) => {
                 <div className={props.background}></div>         
                 <div className={styles.CardTitle}><span className={styles.title}><strong>{props.children}</strong></span></div>                
                 <div className={styles.cardDescription}><span className={styles.description}>{props.description}</span></div>                                           
+                <div className={styles.cardDescription}><span className={styles.description}>{props.technologies}</span></div>                                           
             </div>           
         </Aux>
         
