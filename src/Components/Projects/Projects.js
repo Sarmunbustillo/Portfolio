@@ -21,17 +21,18 @@ import Cards from './Cards/Cards';;
                     </Cards>
                         {/* // project 2 */} 
                     <Cards
-                        cardtitle={styles.javaScript}
-                        description={'Build, Customize and order a Burger Online!'}
-                    >Dylan's Burger
-                        </Cards>
+                        background={styles.portfolio}
+                        linkDemo={"https://sarmunbustillo.github.io/porfolio/"}
+                        description={'This Porfolio'}
+                    >Portfolio
+                    </Cards>
                     {/* // project 3 */}
                     <Cards
-                        linkDemo={"https://sarmunbustillo.github.io/budget-calculator/"}
                         background={styles.budgetCalculator}                        
+                        linkDemo={"https://sarmunbustillo.github.io/budget-calculator/"}
                         description={'Calculate your budget and dynamically see the percentages'}
                     >Budget Calculator
-                        </Cards>
+                    </Cards>
               
                     {/* // project 4 */}
                     <Cards cardtitle={styles.react}>React Project #1</Cards>

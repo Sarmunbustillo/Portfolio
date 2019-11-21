@@ -5,6 +5,11 @@ import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter} from "react-router-dom";
+import styledNormalize from 'styled-normalize'
+import { createGlobalStyle } from 'styled-components'
+
+createGlobalStyle`
+  ${styledNormalize}`
 
 ReactDOM.render(
         <BrowserRouter>

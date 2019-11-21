@@ -51,16 +51,16 @@ const Contact = () => {
         font-size: 3.5vw;                
         font-family: 'Fugaz One', cursive;
         color: #6d7a69;
-        text-shadow: 2px 5px 10px black;
+        text-shadow: 4px 4px 13px black;
         margin-top: 5vh; 
         transform: skewY(-6deg);
         transition: font-size .2s ease-in;
         
 
         @media(max-width: 499px) { 
-            font-size: 6vw;
+            font-size: 9vw;
             margin-top: 1vh;
-            margin-bottom:  1vh;
+            margin-bottom:  1.8vh;
 
          }
     `;
@@ -108,7 +108,7 @@ const Contact = () => {
         }
 
        @media(max-width: 499px) { 
-            font-size: 3vw;
+            font-size: 3.8vw;
             padding: 0;
          }       
         
