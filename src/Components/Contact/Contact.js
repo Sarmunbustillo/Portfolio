@@ -57,10 +57,22 @@ const Contact = () => {
         transition: font-size .2s ease-in;
         
 
+         @media only screen and (min-width: 800px) and (max-width: 1150px) {
+            font-size : 5vw;
+            margin-bottom:  4vh;
+
+        } 
+
+         @media only screen and (min-width: 500px) and (max-width: 799px) {
+            font-size : 5vw;
+            margin-bottom:  4vh;
+
+        }
+
         @media(max-width: 499px) { 
-            font-size: 9vw;
+            font-size: 8vw;
             margin-top: 1vh;
-            margin-bottom:  1.8vh;
+            margin-bottom:  1vh;
 
          }
     `;
