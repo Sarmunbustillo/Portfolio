@@ -30,7 +30,7 @@ import Cards from './Cards/Cards';;
                     {/* // project 3 */}
                     <Cards
                         background={styles.burgersRedux}
-                        linkDemo={"https://sarmunbustillo.github.io/Dylans-Burger-REDUX/"}
+                        linkDemo={"https://github.com/Sarmunbustillo/Dylans-Burger-REDUX"}
                         description={'This version has the same functionality as the previous one, but it manages the state with REDUX Instead of with Hooks'}
                     >Dylan's Burgers
                     </Cards>
