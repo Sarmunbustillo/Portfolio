@@ -31,7 +31,7 @@ import Cards from './Cards/Cards';;
                     <Cards
                         background={styles.burgersRedux}
                         linkDemo={"https://github.com/Sarmunbustillo/Dylans-Burger-REDUX"}
-                        description={'This version has the same functionality as the previous one, but it manages the state with REDUX Instead of with Hooks'}
+                        description={'Same functionality as the previous one, but it manages the state with REDUX Instead of with Hooks'}
                     >Dylan's Burgers
                     </Cards>
                     {/* // project 4 */}
