@@ -9,6 +9,7 @@ const About = () => {
         z-index: -95;
         background-color:black ;     
        font-family: 'Fugaz One', cursive;
+      
 
         @media(max-width: 499px) { 
             height: 70vh
@@ -93,9 +94,9 @@ const About = () => {
         font-size: 5vw; 
         color:  #6d7a69;       
         font-family: inherit;
-        text-shadow: 4px 4px 13px black;
+        text-shadow: 1px 2px 8px black;
         transition: font-size .3s ease-in-out;
-        transform: skewY(-6deg);
+        /* transform: skewY(-6deg); */
         margin-bottom:  5vh;
         transition: all .3s ease-in;
 
