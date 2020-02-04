@@ -34,7 +34,7 @@ const Contact = () => {
         top: -23%;
         left: 50%;
         transform: translateX(-50%);
-        box-shadow: 0px 0px 30px 0px black;
+        box-shadow: 0px 0px 12px 0px black;
         text-align: center;
         display: flex;
         flex-flow: column;

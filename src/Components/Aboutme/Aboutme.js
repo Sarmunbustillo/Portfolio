@@ -35,7 +35,7 @@ const About = () => {
             left: 50%;
             height: 100%;
             width: 95%;        
-            box-shadow: inset 0px 0px 46px black;              
+            box-shadow: inset 0px 0px 15px black;              
             background-color: #d7d7d7;  
             z-index: -101;  
             transform: translateX(-50%);                
@@ -68,7 +68,7 @@ const About = () => {
         background-size: cover;
         background-position-x: 60%;  
         border-radius: 5%; 
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 5px black;
         transition: all .5s ease-in-out;
         overflow: hidden;
 
