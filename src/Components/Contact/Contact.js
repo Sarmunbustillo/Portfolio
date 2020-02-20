@@ -84,7 +84,7 @@ const Contact = () => {
         width: 90%;
         align-self: center;
         display: flex;
-        margin-top: 3vh;
+        margin-top: 2.5vh;
         transition: all .5s ease-in;
   
         

@@ -34,7 +34,7 @@ const About = () => {
             top: 0;
             left: 50%;
             height: 100%;
-            width: 95%;        
+            width: 93%;        
             box-shadow: inset 0px 0px 15px black;              
             background-color: #d7d7d7;  
             z-index: -101;  
@@ -145,9 +145,9 @@ const About = () => {
         position: absolute;
         font-family: inherit;
         font-size: 16px;
-        color: orange;
+        color: black;
         top: 99.5%;
-        left: 20px;
+        left: 100px;
         transform: translateY(-99.5%);
     `;
     

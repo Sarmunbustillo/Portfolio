@@ -98,8 +98,7 @@
     height: 100%;
     align-content: center;
     padding-top: 3vw;
-    transition: all .3s ease-in;
-    
+    transition: all .3s ease-in;    
 }
 
 .portfolio {
@@ -113,11 +112,11 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;    
+    width: 100%;  
 }
 
 .burgersHooks {
-    background-image: url(../../pics/DB-hooks.png);
+    background-image: url(../../pics/DB-hooks1.png);
     background-size: cover;
     background-position-x: center;
     height: 100%;
@@ -131,7 +130,7 @@
 }
 
 .burgersRedux {
-    background-image: url(../../pics/DB-redux.png);
+    background-image: url(../../pics/DB-hooks1.png);
     background-size: cover;
     background-position-x: center;
     height: 100%;
@@ -145,7 +144,7 @@
 }
 
 .cookIt {
-    background-image: url(../../pics/cookIt.png);
+    background-image: url(../../pics/cookIt1.png);
     background-size: cover;
     background-position-x: center;
     height: 100%;
@@ -173,7 +172,7 @@
 }
 
 .budgetCalculator {
-    background-image: url(../../pics/budget-calc.png) ;
+    background-image: url(../../pics/budget-calc1.png) ;
     background-size: cover ;
     background-position-x: center;
     height: 100%; 
