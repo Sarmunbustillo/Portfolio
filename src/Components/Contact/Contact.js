@@ -7,6 +7,7 @@ const Contact = () => {
         height: 40vh;
         background-color: #d7d7d7;
         background-color: #6d7a69;
+        background-color: black; 
         position: relative;  
         
         ::before{
@@ -17,6 +18,7 @@ const Contact = () => {
             top: -30%;
             background-color: #d7d7d7; 
             background-color: #6d7a69; 
+            background-color: black; 
             transform: skewY(-6deg);      
             
         }
@@ -29,11 +31,12 @@ const Contact = () => {
         position: relative;
         width: 80%;
         height: 110%;
-        background-color: #6d7a69;
-        background-color: #d7d7d7; 
+        /* background-color: #6d7a69;
+        background-color: #d7d7d7; */
+        border: 2px solid #6d7a69;       
         top: -23%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) ;
         box-shadow: 0px 0px 12px 0px black;
         text-align: center;
         display: flex;
