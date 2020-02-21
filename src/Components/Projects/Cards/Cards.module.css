@@ -77,10 +77,9 @@
     background-color:#7b9d7b ;  
  }
  .Card:nth-child(6):after {      
-    background-color: 	#861709ee; 
+    background-color:#861709ee; 
     opacity: .28;
  }
-
 
 .Card span{
   opacity: 0;
@@ -157,7 +156,8 @@
     .Card {
        width: 35vh;
        height: 35vh;
-       border-radius: 5%;
+       border-radius: 5%; 
+       box-shadow: 1px 1px 3px lightgray;      
     }
     
 
@@ -172,6 +172,10 @@
         height: 100%;
         width: 100%;
         /* border-radius: 5%; */
+    }
+
+    .Card:hover:nth-child(1n+1) {
+        transform: translateY(0) translateX(0);
     }
 
     .Card span {
