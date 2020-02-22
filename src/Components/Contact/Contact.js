@@ -51,10 +51,10 @@ const Contact = () => {
 
     const Title = styled.h2`
         display: inline-block;
-        font-size: 3.5vw;                
+        font-size: 2.5vw;                
         font-family: 'Fugaz One', cursive;
         color: #6d7a69;
-        text-shadow: 1px 2px 8px black;
+        /* text-shadow: 1px 2px 8px black; */
         margin-top: 5vh; 
         /* transform: skewY(-6deg); */
         transition: font-size .2s ease-in;
@@ -73,7 +73,7 @@ const Contact = () => {
         }
 
         @media(max-width: 499px) { 
-            font-size: 8vw;
+            font-size: 6.5vw;
             margin-top: 1vh;
             margin-bottom:  1vh;
 
