@@ -27,7 +27,6 @@ const About = () => {
         background-color: black;
         z-index: -100 ;
 
-
         ::before {
             content: "";
             position: absolute;       
@@ -65,8 +64,8 @@ const About = () => {
 
     const Img = styled.div`
         position: relative;
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
         background-image: url(${MeImage});
         background-size: cover;
         background-position-x: 60%;
@@ -78,7 +77,6 @@ const About = () => {
         @media(max-width: 499px) {
             display: none;
          }
-
 
     `;
 
@@ -124,7 +122,7 @@ const About = () => {
     const Text = styled.p`
         font-size: 1.5vw;
         color:  #6d7a69;
-        font-family: inherit;
+        font-family: 'Roboto' ;
         line-height: 1.8;
         letter-spacing: .3px;
         transition: all .3s ease-in-out;

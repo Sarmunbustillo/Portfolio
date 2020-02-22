@@ -104,7 +104,7 @@ const Contact = () => {
 
     const ContactDetails = styled.p`
         font-size: 1.5vw;
-        font-family: 'Fugaz One', cursive;
+        font-family: 'Roboto' ;
         color: #6d7a69;       
         margin: 1vw;
         flex: 1;

@@ -3,7 +3,7 @@
 }
 
 .wrapperProject{  
-    height: 100vh;
+   height: 85vh;
    position: relative;  
    transition: all .3s ease-in;
   
@@ -216,7 +216,7 @@
 /* mobile */
 @media(max-width: 499px) {  
     .wrapperProject{
-        height: 70vh;
+        height: 50vh;
     }
     .mainWrapper{
         overflow: scroll;     
