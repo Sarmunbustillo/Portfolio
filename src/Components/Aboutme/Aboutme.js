@@ -145,7 +145,7 @@ const About = () => {
         position: absolute;
         font-family: inherit;
         font-size: 16px;
-        color: black;
+        color: lightgoldenrodyellow;
         top: 99.5%;
         left: 100px;
         transform: translateY(-99.5%);
