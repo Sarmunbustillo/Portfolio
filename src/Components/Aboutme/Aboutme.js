@@ -23,20 +23,21 @@ const About = () => {
         left: 0;
         height: 80%;
         width: 100%;
-        transform: skewY(-6deg)  translateY(-3%);
+        /* transform: skewY(-6deg)  translateY(-3%); */
         background-color: black;
         z-index: -100 ;
 
 
         ::before {
             content: "";
-            position: absolute;
+            position: absolute;       
             top: 0;
             left: 50%;
             height: 100%;
             width: 93%;
             box-shadow: inset 0px 0px 15px black;
             background-color: #d7d7d7;
+            background-color: black;
             z-index: -101;
             transform: translateX(-50%);
         }
@@ -48,7 +49,8 @@ const About = () => {
         left: 50%;
         width: 90%;
         height: 80%;
-        transform: skewY(6deg)  translateY(-120%) translateX(-50%);
+        /* transform: skewY(6deg)  translateY(-120%) translateX(-50%); */
+        transform:   translateY(-120%) translateX(-50%);
         padding: 1.5vh;
         display: flex;
         transition: all .5s ease-in;
@@ -67,7 +69,7 @@ const About = () => {
         background-image: url(${MeImage});
         background-size: cover;
         background-position-x: 60%;
-        border-radius: 2%;
+        /* border-radius: 2%; */
         /* box-shadow: 0px 0px 5px lightgray; */
         transition: all .5s ease-in-out;
         overflow: hidden;
