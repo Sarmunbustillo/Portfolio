@@ -36,7 +36,7 @@ const About = () => {
             height: 100%;
             width: 93%;
             box-shadow: inset 0px 0px 15px black;
-            background-color: #d7d7d7;
+            /* background-color: #d7d7d7; */
             background-color: black;
             z-index: -101;
             transform: translateX(-50%);
@@ -45,19 +45,20 @@ const About = () => {
 
     const ContentWrapper = styled.div`
         position: relative;       
-        top: 120%;
+        top: 110%;
         left: 50%;
         width: 90%;
         height: 80%;
         /* transform: skewY(6deg)  translateY(-120%) translateX(-50%); */
-        transform:   translateY(-120%) translateX(-50%);
+        transform:   translateY(-110%) translateX(-50%);
         padding: 1.5vh;
         display: flex;
         transition: all .5s ease-in;
 
          @media(max-width: 499px) {
             top: 50%;
-            transform: skewY(6deg)  translateY(-50%) translateX(-50%);
+            /* transform: skewY(6deg)  translateY(-50%) translateX(-50%); */
+            transform: translateY(-50%) translateX(-50%);
 
          }
     `;
