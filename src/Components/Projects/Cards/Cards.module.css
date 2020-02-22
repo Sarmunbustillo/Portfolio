@@ -29,7 +29,7 @@
 }
 
 .Card:hover:nth-child(1) {
-    transform: translatex(var(--slideCardNegative)) translateY(var(--slideCardNegative));        
+    transform: translatex(var(--slideCardNegative)) translateY(var(--slideCardNegative));     
 }
 .Card:hover:nth-child(2) {
     transform: translateY(var(--slideCardNegative));    
@@ -38,7 +38,8 @@
     transform: translatex(var(--slideCardPositive)) translateY(var(--slideCardNegative));    
 }
 .Card:hover:nth-child(4) {
-    transform: translateX(var(--slideCardNegative)) translateY(var(--slideCardPositive));       
+    transform: translateX(var(--slideCardNegative)) translateY(var(--slideCardPositive)); 
+    box-shadow: 2px -2px 5px rgba(211, 211, 211, 0.075);       
 }
 .Card:hover:nth-child(5) {
     transform: translateY(var(--slideCardPositive));    
@@ -59,8 +60,8 @@
     /* border-radius: 5%; */
 }
  .Card:nth-child(1):after {   
-    background-color: #6a6a6a;  
-    opacity: .1;
+    background-color: #8c8f80;  
+    opacity: .3;
  }
  .Card:nth-child(2):after {   
     background-color: #cca3a3;  
@@ -73,6 +74,7 @@
     background-color: #719bd5; 
     opacity: .2;
  }
+ 
  .Card:nth-child(5):after {   
     background-color:#7b9d7b ;  
  }
@@ -80,6 +82,13 @@
     background-color:#861709ee; 
     opacity: .28;
  }
+
+ /* hover so the effect of sliding apart can be seen better */
+ .Card:hover:nth-child(4):after {   
+    background: linear-gradient(190deg, #1a1f27 , #000000 20%); 
+    opacity: .8;
+ }
+ 
 
 .Card span{
   opacity: 0;
@@ -155,9 +164,7 @@
 @media(max-width: 499px) {
     .Card {
        width: 35vh;
-       height: 35vh;
-       border-radius: 5%; 
-       box-shadow: 1px 1px 3px lightgray;      
+       height: 35vh;      
     }
     
 
@@ -176,6 +183,11 @@
 
     .Card:hover:nth-child(1n+1) {
         transform: translateY(0) translateX(0);
+    }
+
+    .Card:nth-child(1):after {   
+        background: linear-gradient(135deg, #000000 50%,  #686666); 
+        opacity: .7;
     }
 
     .Card span {
