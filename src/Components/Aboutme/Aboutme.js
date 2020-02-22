@@ -43,7 +43,7 @@ const About = () => {
     `;
 
     const ContentWrapper = styled.div`
-        position: relative;
+        position: relative;       
         top: 120%;
         left: 50%;
         width: 90%;
@@ -67,7 +67,7 @@ const About = () => {
         background-image: url(${MeImage});
         background-size: cover;
         background-position-x: 60%;
-        border-radius: 5%;
+        border-radius: 2%;
         /* box-shadow: 0px 0px 5px lightgray; */
         transition: all .5s ease-in-out;
         overflow: hidden;
@@ -86,7 +86,6 @@ const About = () => {
         text-align: center;
         align-items: center;
         padding: 1vh;
-
 
     `;
 
